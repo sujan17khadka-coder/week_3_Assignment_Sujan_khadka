@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML Practical Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>My HTML Practical Page</h1>
+    <p>This page demonstrates different <b>HTML tags</b>.</p>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#images">Images</a> |
+      <a href="#table">Table</a> |
+      <a href="#form">Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+
+      <p>This is a paragraph. HTML is used to create the structure of a webpage.</p>
+      <hr>
+
+      This is <b>bold text</b>.<br>
+      This is <strong>important text</strong>.<br>
+      This is <em>italic text</em>.<br><br>
+      This is <u>underlined text</u>.<br>
+      This is <mark>highlighted text</mark>.<br>
+      This is <small>small text</small>.<br>
+      This is <del>deleted text</del>.<br>
+      H<sub>2</sub>O<br>
+      x<sup>2</sup>
+    </section>
+
+    <section id="images">
+      <h2>Images</h2>
+      <img src="Student.jpg" alt="Student studying" width="300">
+    </section>
+ 
+    <section>
+      <h2>Links</h2>
+      <p>Visit <a href="https://www.google.com">Google</a></p>
+      <p>Open in a new tab: <a href="https://github.com/sujan17khadka-coder/week_3_Assignment_Sujan_khadka.git" target="_blank">GitHub</a></p>
+    </section>
+ 
+    <section>
+      <h2>Unordered List</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+ 
+      <h2>Ordered List</h2>
+      <ol type="i">
+        <li>Open VS Code</li>
+        <li>Create HTML file</li>
+        <li>Write HTML code</li>
+        <li>Open in browser</li>
+      </ol>
+ 
+      <h2>Description List</h2>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+    </section>
+ 
+    <section>
+      <h2>Div and Span</h2>
+      <div>
+        <h3>Student Information</h3>
+        <p>My name is <span>Sujan</span>.</p>
+      </div>
+    </section>
+    
+    <section id="table">
+      <h2>Student Table</h2>
+      <table>
+        <caption>Student Marks</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>HTML</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>Sarah</td>
+            <td>CSS</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>David</td>
+            <td>JavaScript</td>
+            <td>78</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Average</td>
+            <td>84.3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+ 
+    <section id="form">
+      <h2>Student Registration Form</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+        </p>
+        <p>
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age">
+        </p>
+        <p>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+        </p>
+ 
+        <p>
+          <fieldset style="border:none; padding:0;">
+            <legend>Gender:</legend>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </fieldset>
+        </p>
+ 
+        <p>
+          <fieldset style="border:none; padding:0;">
+            <legend>Skills:</legend>
+            <br>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="skills" value="js">
+            <label for="js">JavaScript</label>
+          </fieldset>
+        </p>
+ 
+        <p>
+          <label for="course">Choose Course:</label>
+          <select id="course" name="course">
+            <option value="">-- Select --</option>
+            <option value="web">Web Development</option>
+            <option value="data">Data Science</option>
+            <option value="design">Graphic Design</option>
+          </select>
+        </p>
+ 
+        <p>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="70"></textarea>
+        </p>
+ 
+        <p>
+          <label for="file">Upload File:</label>
+          <input type="file" id="file" name="file">
+        </p>
+ 
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+     </fieldset>
+        </p>
+ 
+        <p>
+          <label for="course">Choose Course:</label>
+          <select id="course" name="course">
+            <option value="">-- Select --</option>
+            <option value="web">Web Development</option>
+            <option value="data">Data Science</option>
+            <option value="design">Graphic Design</option>
+          </select>
+        </p>
+ 
+        <p>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="70"></textarea>
+        </p>
+ 
+        <p>
+          <label for="file">Upload File:</label>
+          <input type="file" id="file" name="file">
+        </p>
+ 
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+ 
+    <section>
+      <h2>Quotation</h2>
+      <blockquote>The best way to learn programming is by writing code.</blockquote>
+      <p>Someone said: <q>Practice makes perfect.</q></p>
+    </section>
+ 
+    <section>
+      <h2>Code Example</h2>
+      <p>Example of an HTML tag:</p>
+      <code>&lt;p&gt;Hello World&lt;/p&gt;</code>
+      <pre>
+This is
+preformatted
+text.
+      </pre>
+    </section>
+ 
+    <section>
+      <h2>Audio</h2>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+ 
+    <section>
+      <h2>Video</h2>
+      <video width="500" controls>
+        <source src="mediasample.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+ 
+    <section>
+      <h2>Details and Summary</h2>
+      <details open>
+        <summary>Click to learn about HTML</summary>
+        <p>HTML stands for HyperText Markup Language. It is used to structure content on web pages.</p>
+      </details>
+    </section>
+  </main>
+ 
+  <footer>
+    <p>&copy; 2026 My HTML Practical Page</p>
+    <p>Created for HTML practice.</p>
+  </footer>
+ 
+</body>
+</html>
+ 
